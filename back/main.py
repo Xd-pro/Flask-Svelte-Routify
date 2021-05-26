@@ -3,7 +3,6 @@ app = Flask(__name__, "", "../front/dist", template_folder="../front/dist")
 
 @app.errorhandler(404)
 def catch_all(path):
-    print("R")
     return render_template("index.html")
 
 @app.route("/api")
